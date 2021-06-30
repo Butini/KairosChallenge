@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KairosChallenge
 {
-    public partial class frmUrl : Form
+    public partial class frmUrlLink : Form
     {
-        public frmUrl()
+        public frmUrlLink()
         {
             InitializeComponent();
         }
