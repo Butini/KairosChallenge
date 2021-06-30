@@ -43,7 +43,7 @@ namespace KairosChallenge
 
             CodeList = CodeList.OrderBy(x => x.Number).ToList();
 
-            URL = "";
+            URL = BuildUrl(CodeList);
         }
 
         private string ConvertAllInMinuscule(string message)
@@ -74,6 +74,18 @@ namespace KairosChallenge
 
                 i++;
             }
+        }
+
+        private string BuildUrl(List<Code> list)
+        {
+            string url = "";
+
+            foreach (var letter in list)
+            {
+                url += letter.Letter;
+            }
+
+            return url;
         }
     }
 }
