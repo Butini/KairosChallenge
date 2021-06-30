@@ -16,7 +16,7 @@ namespace KairosChallenge
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUrl());
+            Application.Run(new frmUrlLink());
         }
     }
 }
